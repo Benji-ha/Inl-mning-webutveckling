@@ -57,8 +57,8 @@ body {
 
 .header .logo img {
   width: 84%;
-  height: 90%;
-  margin-left: 1rem;
+  height: 70%;
+  margin-left: auto;
 }
 
 .footer {
@@ -70,6 +70,7 @@ body {
   align-items: center;
   color: white;
   background-color: black;
+  font-size: smaller;
 }
 
 .footer .footer__nav {
@@ -82,22 +83,12 @@ body {
   color: white;
 }
 
-.footer .footer__nav h2 {
-  margin-bottom: 10px;
-}
-
-.footer .footer_address h2 {
-  margin-bottom: 1px;
-}
-
-.footer .footer_address p {
-  margin: 0;
-  padding-top: 1px;
-  padding-bottom: 1px;
-}
-
 .footer .footer__social-media figure {
   margin: 0;
+}
+
+.footer_address h1 {
+  margin-bottom: -11px;
 }
 
 .wrapper-startpage {
@@ -167,7 +158,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
-  height: 100%;
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
@@ -197,6 +187,7 @@ body {
   height: 20rem;
   background-color: green;
   color: white;
+  margin: 3%;
   background-image: url(../Inl-mning-webutveckling/img&logo/assets/photos/stars-sky.jpg);
   background-size: cover;
   box-shadow: 0 4px 8px 0 rgba(85, 85, 233, 0.2), 0 6px 20px 0 rgba(66, 66, 236, 0.19);
@@ -268,7 +259,8 @@ body {
   display: flex;
   flex-direction:column ;
   align-items: center;
-  margin-right:7% ;
+  margin-right:1rem ;
+  margin-left: 1rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -280,5 +272,72 @@ body {
   max-height: 100%;
 }
 
+.header {
+  height: 12%;
 }
 
+.header .logo img {
+  height: 43%;
+  width:89% ;
+}
+
+.wrapper-startpage .welcome-box {
+background-size: cover;
+}
+.wrapper-startpage {
+  height: 29rem;
+}
+.info-box .info-box-2 {
+  font-size: 1rem;
+}
+
+.footer {
+  font-size: 10px;
+}
+
+.footer .footer_address {
+  margin-top: 1rem;
+}
+
+.footer_address h1 {
+  margin-top: -9px;
+}
+
+.about-content{
+  grid-template-rows: repeat(1, 1fr);
+  gap: 1px;
+  grid-template-columns: none;
+}
+
+.about-content .about-cards {
+  grid-column: auto / 1;
+}
+.about-content .about-cards__large {
+  padding: 1%
+}
+
+.nav {
+flex-direction: column;
+align-content: space-evenly;
+flex-wrap: wrap;
+font-size: 10px;
+height: 22%;
+}
+
+.nav .nav__booking {
+  flex-wrap: wrap;
+  align-content: center;
+} 
+
+.nav button {
+  margin-top: 14px;
+}
+
+.main-booking__info {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 1px;
+}
+
+}
