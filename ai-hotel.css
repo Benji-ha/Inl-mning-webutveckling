@@ -1,26 +1,25 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   width: 100vw;
   height: 100vh;
   margin: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .header {
-  width: 100%;
-  height: 10%;
+  height: 11%;
   display: flex;
   justify-content: center;
   flex-direction: row;
-  font-family: "Georgia";
 }
 
 .header-item {
   width: 100%;
   height: 100%;
-  background-color: #d1d1d1;
+  background-color: black;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -29,36 +28,257 @@ body {
 }
 
 .header-item a {
-    text-decoration: none;
-    color: black;
-    font-size: larger;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
 }
 
-a:hover {
-  background-color: grey;
+.header a:hover {
+  background-color: white;
   border: none;
   border-radius: 20px;
   color: black;
   padding: 8px 16px;
   text-align: center;
-  font-size: 16px;
+  font-size: 20px;
   margin: 4px 2px;
   transition: 0.3s;
   text-decoration: none;
 }
 
-.logo {
+.header .logo {
   width: 100%;
   height: 100%;
-  background-color: rgb(209, 209, 209);
+  background-color: black;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-.logo img {
-    width: 100%;
-    height: 100%;
-    margin-left: 5rem;
+.header .logo img {
+  width: 84%;
+  height: 90%;
+  margin-left: 1rem;
+}
+
+.footer {
+  width: 100%;
+  height: 20%;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  background-color: black;
+}
+
+.footer .footer__nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .footer__nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer .footer__nav h2 {
+  margin-bottom: 10px;
+}
+
+.footer .footer_address h2 {
+  margin-bottom: 1px;
+}
+
+.footer .footer_address p {
+  margin: 0;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.footer .footer__social-media figure {
+  margin: 0;
+}
+
+.wrapper-startpage {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  grid-template-areas:
+    "welcome-box welcome-box welcome-box welcome-box"
+    "welcome-box welcome-box welcome-box welcome-box"
+    "welcome-box welcome-box welcome-box welcome-box"
+    "welcome-box welcome-box welcome-box welcome-box"
+    "info-box info-box info-box info-box"
+    "info-box info-box info-box info-box";
+  height: 95rem;
+}
+
+.wrapper-startpage .welcome-box {
+  grid-area: welcome-box;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(img&logo/assets/photos/09-night-1920.jpg);
+}
+
+.info-box {
+  grid-area: info-box;
+  display: flex;
+  background-color: blue;
+}
+
+.info-box-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  grid-area: info-box-1;
+  width: 100%;
+  height: 100%;
+  background-color: #4a5a4d;
+}
+
+.info-box-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  grid-area: info-box-2;
+  width: 100%;
+  height: 100%;
+  background-color: #404d46;
+  font-size: 2rem;
+}
+
+.info-box-2 hr {
+  width: 60%;
+}
+
+.about-body {
+  background-color: #04132A;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  height: 100%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.about-cards-1 h1 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-content .about-cards {
+  grid-column: auto / span 3;
+  background-color: #eceadf;
+  text-align: center;
+  padding: 2rem;
+}
+
+.about-content .about-cards__large {
+  grid-column: auto / span 6;
+  background-color: white;
+  text-align: center;
+}
+
+.intro__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  background-color: green;
+  color: white;
+  background-image: url(../Inl-mning-webutveckling/img&logo/assets/photos/stars-sky.jpg);
+  background-size: cover;
+  box-shadow: 0 4px 8px 0 rgba(85, 85, 233, 0.2), 0 6px 20px 0 rgba(66, 66, 236, 0.19);
+}
+
+.nav {
+  background-color: #eceadf;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 15%;
+  width: 100%;
+}
+
+.nav__booking {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav label {
+  margin: 3% 3%; 
+}
+
+.nav input {
+  border-style: solid;
+  border-width: thin;
+  border-radius: 2rem;
+  padding-inline-start: 8px;
+  height: 25%;
+}
+
+.nav button {
+  border-radius: 2rem;
+  height: 25%;
+  border-style: solid;
+  border-width: thin;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main-booking {
+  display: grid;
+  grid-template-columns: repeat(1, 4fr);
+  background-color: black;
+  gap: 2%;
+  height: 105rem;
+}
+
+.main-booking__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #eceadf;
+  border: solid #eceadf;
+  margin-top: 5rem;
+  margin-left: 11rem;
+  margin-right: 11rem;
+  border-radius: 10px;
+}
+
+.main-booking__info h1 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.booking__info__text {
+  display: flex;
+  flex-direction:column ;
+  align-items: center;
+  margin-right:7% ;
+}
+
+@media only screen and (max-width: 768px) {
+  .main-booking__info {
+    flex-direction: column;
+  }
+.main-booking__info img {
+  max-width: 100%;
+  max-height: 100%;
+}
 
 }
+
