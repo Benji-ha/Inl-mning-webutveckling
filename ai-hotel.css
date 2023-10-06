@@ -236,7 +236,7 @@ body {
 .booking__card {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   color: #eceadf;
   border: solid #eceadf;
   margin-top: 5rem;
